@@ -37,7 +37,7 @@ export const CategoryChart: React.FC<CategoryChartProps> = ({ data }) => {
             fill="#8884d8"
             dataKey="revenue"
           >
-            {data.map((entry, index) => (
+            {data.map((_, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
           </Pie>
