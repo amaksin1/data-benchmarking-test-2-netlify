@@ -1,7 +1,6 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import type { SalesData } from './types';
-import type { Formatter } from 'recharts/types/component/DefaultTooltipContent';
 
 interface SalesChartProps {
   data: SalesData[];

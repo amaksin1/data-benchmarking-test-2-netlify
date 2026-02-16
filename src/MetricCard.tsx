@@ -1,5 +1,4 @@
 import React from 'react';
-import { TrendingUp, TrendingDown } from 'lucide-react';
 
 interface MetricCardProps {
   title: string;
@@ -12,7 +11,6 @@ interface MetricCardProps {
 export const MetricCard: React.FC<MetricCardProps> = ({ 
   title, 
   value, 
-  change, 
   icon,
   format = 'number'
 }) => {
@@ -28,8 +26,6 @@ export const MetricCard: React.FC<MetricCardProps> = ({
         return val.toLocaleString();
     }
   };
-
-  const isPositive = change !== undefined && change >= 0;
 
   return (
     <div style={{

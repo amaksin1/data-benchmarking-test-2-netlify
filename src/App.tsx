@@ -3,11 +3,7 @@ import {
   DollarSign, 
   ShoppingCart, 
   TrendingUp, 
-  Users,
-  Menu,
-  X,
-  BarChart3,
-  Package
+  Users
 } from 'lucide-react';
 import { MetricCard } from './MetricCard';
 import { SalesChart } from './SalesChart';
@@ -26,7 +22,6 @@ import type { SalesData } from './types';
 
 function App() {
   const [salesData, setSalesData] = useState<SalesData[]>([]);
-  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   useEffect(() => {
     const data = generateSalesData();
